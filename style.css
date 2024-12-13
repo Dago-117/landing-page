@@ -6,6 +6,9 @@
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+
 }
 
 
@@ -113,7 +116,7 @@ img {
     border-radius: 12px;
 }
 
-.quote{
+.quote {
     padding: 50px 100px;
     font-size: 36px;
     font-style: italic;
@@ -122,11 +125,46 @@ img {
     flex-direction: column;
 
 }
-.quote>p+p{
+
+.quote>p+p {
     align-self: flex-end;
     font-size: 28px;
     font-style: normal;
 }
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-wrapper {
+    background-color: #3882f6;
+    color: white;
+    display: flex;
+    padding: 50px 100px;
+    margin: 100px 20px;
+    display: flex;
+    border-radius: 6px;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.cta-wrapper>button {
+    border: 2px solid white;
+    color: white;
+    background-color: inherit;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 6px 24px;
+    align-self: center;
+}
+
+.cta-wrapper>h3 {
+    margin: 0;
+}
+
 ul {
     display: flex;
     gap: 12px;
@@ -141,4 +179,11 @@ a {
 .logo {
     padding: 0;
     margin: 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
 }
